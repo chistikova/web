@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рейсы</title>
+    <link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+    <!-- Меню -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="flights.html" class="active">Рейсы</a></li>
+            <li><a href="booking.html">Бронирование</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Расписание рейсов</h1>
+    </header>
+
+    <main>
+        <table class="flights-table">
+            <thead>
+                <tr>
+                    <th>Номер рейса</th>
+                    <th>Откуда</th>
+                    <th>Куда</th>
+                    <th>Время вылета</th>
+                    <th>Статус</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AF101</td>
+                    <td>Москва</td>
+                    <td>Париж</td>
+                    <td>10:30</td>
+                    <td class="status-ok">В расписании</td>
+                </tr>
+                <tr>
+                    <td>BA202</td>
+                    <td>СПб</td>
+                    <td>Лондон</td>
+                    <td>14:00</td>
+                    <td class="status-ok">В расписании</td>
+                </tr>
+                <tr>
+                    <td>LH303</td>
+                    <td>Москва</td>
+                    <td>Берлин</td>
+                    <td>16:45</td>
+                    <td class="status-delay">Задержка</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Аэропорт. Все права защищены.</p>
+    </footer>
+</body>
+</html>

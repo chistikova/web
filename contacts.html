@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+    <!-- Меню -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="flights.html">Рейсы</a></li>
+            <li><a href="booking.html">Бронирование</a></li>
+            <li><a href="contacts.html" class="active">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Контакты</h1>
+    </header>
+
+    <main>
+        <section id="contacts">
+            <h2>Свяжитесь с нами</h2>
+            
+            <div class="contact-info">
+                <p><strong>Адрес:</strong> ул. Аэропортная, 1, Белгород</p>
+                <p><strong>Телефон:</strong> 8 (800) 555-35-35</p>
+                <p><strong>Email:</strong> info@airport.ru</p>
+                <p><strong>График работы:</strong> 24/7</p>
+            </div>
+
+            <h3>Форма обратной связи</h3>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="msg-name">Имя:</label>
+                    <input type="text" id="msg-name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="msg-email">Email:</label>
+                    <input type="email" id="msg-email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Аэропорт. Все права защищены.</p>
+    </footer>
+</body>
+</html>
