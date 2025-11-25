@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы пассажиров</title>
+    <link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+    <!-- Меню -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="flights.html">Рейсы</a></li>
+            <li><a href="booking.html">Бронирование</a></li>
+            <li><a href="reviews.html" class="active">Отзывы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Отзывы пассажиров</h1>
+    </header>
+
+    <main>
+        <h2>Оставить отзыв о полёте</h2>
+        
+        <form>
+            <fieldset>
+                <legend>Информация о пассажире</legend>
+                
+                <div class="form-group">
+                    <label for="name">ФИО:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Информация о полёте</legend>
+                
+                <div class="form-group">
+                    <label for="flight">Номер рейса:</label>
+                    <input type="text" id="flight" name="flight" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Дата полёта:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Оценка полёта (1-5):</label>
+                    <select id="rating" name="rating" required>
+                        <option>Выберите оценку</option>
+                        <option value="5">5 - Отлично</option>
+                        <option value="4">4 - Хорошо</option>
+                        <option value="3">3 - Нормально</option>
+                        <option value="2">2 - Плохо</option>
+                        <option value="1">1 - Очень плохо</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ваш отзыв</legend>
+                
+                <div class="form-group">
+                    <label for="review">Текст отзыва:</label>
+                    <textarea id="review" name="review" rows="8" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="recommend">
+                        <input type="checkbox" id="recommend" name="recommend">
+                        Я рекомендую этот авиаперелёт
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn-submit">Отправить отзыв</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Аэропорт. Все права защищены.</p>
+    </footer>
+</body>
+</html>
